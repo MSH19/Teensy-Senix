@@ -1,4 +1,4 @@
-# Teensy-Senix ToughSonic Ultrasonic Sensors 
+# Teensy/Arduino - ToughSonic Ultrasonic Sensors (Senix) 
 Read ultrasonic distance measured by ToughSonic sensors (Senix) to Teensy/Arduino microcontrollers.
 This code shows a method for reading the distance measured by continous ultrasonic sensors provided by Senix.
 
