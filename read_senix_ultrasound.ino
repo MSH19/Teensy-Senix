@@ -1,6 +1,6 @@
 // This code shows a method for reading the distance measured by 
-// the ToughSonic ultrasonic sensors provided by SENIX.
-// The ultrasonic sensor is ToughSonic 3 (RS232 model) and should be connected 
+// ToughSonic ultrasonic sensors provided by Senix.
+// The ultrasonic sensor tested is ToughSonic 3 (RS232 model) and should be connected 
 // through a MAX232-based conversion circuit to a 5V microcontroller serial port.
 // The MAX232 chip is connected to a hardware serial port in 
 // the Teensy 3.5 mircrocontroller development system.
@@ -37,7 +37,7 @@ void setup()
 ///////////////////////////////////////  MAIN LOOP
 void loop()
 {
-  // use this loop to read an ultrasonic distance 
+  // use this loop to read a single ultrasonic distance 
   // from a continously streaming sensor
   int count_measure = 0;
   while (true)
@@ -66,7 +66,7 @@ int readUltra()
   int message_size = 0;
   String ultra_message = "";
   
-  // keep looping on the hardware serial port to get the message complete
+  // loop hardware serial port to get the message complete
   while (true)
   {
     // check if data is available on the hardaware serial port
@@ -74,12 +74,12 @@ int readUltra()
     {
       // read character
       char u = ultra_serial.read();
-      // check if we reached the end of a message
+      // check for end of a message
       if (u == '\r')
       {
         break;
       } else
-      { // we didn't reach the end of a message, concat the message
+      { // concat char to message String
         // and increment the message size
         ultra_message.concat(u);
         message_size = message_size + 1;
