@@ -7,14 +7,13 @@ The sensor tested is a ToughSonic 3 (RS232 model) and should be connected throug
 
 Output: ultrasonic distance measured in millimeters.
 
-// Notes
 ToughSonic sensor is configured via SenixVIEW software to work in continous mode with 100 msec interval.
 
-// Connections: 
-// Yellow wire  ................. pin 14 (T1OUT) in MAX232 IC  
-// Gray wire    ................. pin 13 (R1IN) in MAX232 IC
-// Brown wire   ................. +24 VDC - Power supply
-// Blue wire    ................. GND - Common ground
+Connections: 
+Yellow wire  ................. pin 14 (T1OUT) in MAX232 IC  
+Gray wire    ................. pin 13 (R1IN) in MAX232 IC
+Brown wire   ................. +24 VDC - Power supply
+Blue wire    ................. GND - Common ground
 
-// pin 11 (T1IN)  in MAX232 IC ... pin 32 (TX4) in Teensy 3.5 
-// pin 12 (R1OUT) in MAX232 IC ... pin 31 (RX4) in Teensy 3.5 
+pin 11 (T1IN)  in MAX232 IC ... pin 32 (TX4) in Teensy 3.5 
+pin 12 (R1OUT) in MAX232 IC ... pin 31 (RX4) in Teensy 3.5 
